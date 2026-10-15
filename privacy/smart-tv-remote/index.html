@@ -1,0 +1,825 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#06101e">
+  <meta name="description" content="Privacy Policy for Smart TV Remote by H2Open Games.">
+  <title>Privacy Policy | Smart TV Remote</title>
+
+  <style>
+    :root {
+      --bg: #06101e;
+      --surface: #0d2038;
+      --surface-light: #102a48;
+      --border: #234665;
+      --blue: #1389f5;
+      --cyan: #51c5ff;
+      --text: #f5f9ff;
+      --muted: #a9bdd5;
+      --green: #36e6a4;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont,
+        "Segoe UI", Roboto, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.75;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: -250px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 850px;
+      height: 650px;
+      background: radial-gradient(
+        ellipse,
+        rgba(0, 123, 255, 0.18),
+        rgba(0, 123, 255, 0.05) 45%,
+        transparent 72%
+      );
+      pointer-events: none;
+      z-index: -1;
+    }
+
+    a {
+      color: var(--cyan);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      width: min(100% - 40px, 900px);
+      margin: auto;
+    }
+
+    /* HEADER */
+
+    header {
+      border-bottom: 1px solid rgba(100, 170, 255, 0.12);
+      background: rgba(6, 16, 30, 0.8);
+      backdrop-filter: blur(16px);
+    }
+
+    .nav {
+      min-height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 750;
+      font-size: 17px;
+      letter-spacing: -0.4px;
+    }
+
+    .brand-icon {
+      width: 42px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      border-radius: 13px;
+      background: linear-gradient(135deg, #0754c9, #1389f5);
+      box-shadow: 0 0 25px rgba(19, 137, 245, 0.25);
+      font-size: 23px;
+    }
+
+    .brand-small {
+      font-size: 12px;
+      color: var(--muted);
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+
+    /* HERO */
+
+    .hero {
+      text-align: center;
+      padding: 95px 0 65px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      padding: 7px 17px;
+      border-radius: 40px;
+      background: rgba(19, 137, 245, 0.1);
+      border: 1px solid rgba(81, 197, 255, 0.25);
+      color: #a9ddff;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.6px;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--green);
+      box-shadow: 0 0 12px var(--green);
+    }
+
+    h1 {
+      margin: 25px 0 16px;
+      font-size: clamp(46px, 8vw, 76px);
+      line-height: 1.08;
+      letter-spacing: -3px;
+      font-weight: 800;
+    }
+
+    h1 span {
+      background: linear-gradient(120deg, #79d8ff, #1389f5);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .subtitle {
+      max-width: 580px;
+      margin: auto;
+      font-size: 16px;
+      color: var(--muted);
+    }
+
+    .updated {
+      margin-top: 23px;
+      color: #819cb9;
+      font-size: 12px;
+    }
+
+    /* HIGHLIGHT CARD */
+
+    .overview {
+      position: relative;
+      padding: 30px;
+      border-radius: 22px;
+      background: linear-gradient(
+        135deg,
+        rgba(16, 49, 82, 0.95),
+        rgba(8, 28, 51, 0.95)
+      );
+      border: 1px solid rgba(81, 197, 255, 0.24);
+      box-shadow: 0 15px 60px rgba(0, 0, 0, 0.18);
+      overflow: hidden;
+    }
+
+    .overview::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 20%;
+      right: 20%;
+      height: 1px;
+      background: linear-gradient(
+        90deg,
+        transparent,
+        #51c5ff,
+        transparent
+      );
+      box-shadow: 0 0 25px #1389f5;
+    }
+
+    .overview-label {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #8edaff;
+      font-size: 12px;
+      font-weight: 750;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    .overview h2 {
+      margin: 0 0 12px;
+      font-size: 25px;
+      letter-spacing: -0.6px;
+    }
+
+    .overview p {
+      color: var(--muted);
+      margin: 0;
+      font-size: 14px;
+    }
+
+    /* PRIVACY SECTIONS */
+
+    .content {
+      padding: 50px 0 90px;
+    }
+
+    .section {
+      padding: 32px 0;
+      border-bottom: 1px solid rgba(125, 173, 220, 0.13);
+    }
+
+    .section-heading {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 16px;
+    }
+
+    .number {
+      display: grid;
+      place-items: center;
+      width: 37px;
+      height: 37px;
+      flex-shrink: 0;
+      border-radius: 11px;
+      background: rgba(19, 137, 245, 0.12);
+      border: 1px solid rgba(81, 197, 255, 0.18);
+      color: var(--cyan);
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .section h2 {
+      margin: 0;
+      font-size: 21px;
+      letter-spacing: -0.5px;
+    }
+
+    .section p,
+    .section li {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .section p {
+      margin: 12px 0;
+    }
+
+    .section ul {
+      padding-left: 22px;
+    }
+
+    .section li {
+      margin: 8px 0;
+    }
+
+    .section strong {
+      color: #e2efff;
+    }
+
+    /* CONTACT */
+
+    .contact-card {
+      margin-top: 45px;
+      padding: 35px;
+      border-radius: 22px;
+      text-align: center;
+      background: linear-gradient(
+        135deg,
+        #102c4d,
+        #091b31
+      );
+      border: 1px solid rgba(81, 197, 255, 0.25);
+    }
+
+    .contact-icon {
+      font-size: 30px;
+      margin-bottom: 12px;
+    }
+
+    .contact-card h2 {
+      margin: 0 0 10px;
+      font-size: 25px;
+    }
+
+    .contact-card p {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 22px;
+    }
+
+    .email-button {
+      display: inline-block;
+      padding: 13px 23px;
+      border-radius: 30px;
+      color: white;
+      font-size: 13px;
+      font-weight: 700;
+      background: linear-gradient(
+        110deg,
+        #0754c9,
+        #1389f5
+      );
+      border: 1px solid #69bfff;
+      box-shadow: 0 0 25px rgba(19, 137, 245, 0.23);
+      transition: transform 0.2s, box-shadow 0.2s;
+      overflow-wrap: anywhere;
+    }
+
+    .email-button:hover {
+      text-decoration: none;
+      transform: translateY(-2px);
+      box-shadow: 0 0 35px rgba(19, 137, 245, 0.38);
+    }
+
+    /* FOOTER */
+
+    footer {
+      padding: 28px 0;
+      border-top: 1px solid rgba(125, 173, 220, 0.12);
+      color: #8196b1;
+      font-size: 12px;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        width: min(100% - 32px, 900px);
+      }
+
+      .hero {
+        padding: 65px 0 45px;
+      }
+
+      h1 {
+        letter-spacing: -2px;
+      }
+
+      .overview,
+      .contact-card {
+        padding: 24px;
+      }
+
+      .section {
+        padding: 27px 0;
+      }
+
+      .section h2 {
+        font-size: 19px;
+      }
+
+      .brand {
+        font-size: 14px;
+      }
+
+      .brand-small {
+        font-size: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="brand-icon" aria-hidden="true">▣</div>
+        <span>Smart TV Remote</span>
+      </div>
+      <div class="brand-small">H2OPEN GAMES</div>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section class="hero">
+      <div class="eyebrow">Your privacy matters</div>
+
+      <h1>Privacy <span>Policy.</span></h1>
+
+      <p class="subtitle">
+        A clear explanation of how Smart TV Remote
+        uses your local network, connects to televisions,
+        and handles information.
+      </p>
+
+      <p class="updated">Last updated: 15 October 2026</p>
+    </section>
+
+    <div class="overview">
+      <div class="overview-label">
+        <span aria-hidden="true">✦</span>
+        Privacy at a glance
+      </div>
+
+      <h2>Designed to connect your devices.</h2>
+
+      <p>
+        Smart TV Remote is an application developed by
+        H2Open Games that allows users to discover and
+        control compatible Samsung and Android / Google
+        televisions over a local network.
+        The application uses network connectivity,
+        device discovery, and TV pairing functionality.
+        It may also display advertisements provided
+        by Google AdMob.
+      </p>
+    </div>
+
+    <div class="content">
+
+      <section class="section">
+        <div class="section-heading">
+          <span class="number">01</span>
+          <h2>Introduction</h2>
+        </div>
+
+        <p>
+          This Privacy Policy describes how H2Open Games
+          ("we", "our", or "us") handles information
+          when you use the Smart TV Remote mobile
+          application ("the App").
+        </p>
+
+        <p>
+          By using the App, you acknowledge the
+          information described in this policy.
+        </p>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <span class="number">02</span>
+          <h2>Information We Process</h2>
+        </div>
+
+        <p>
+          To provide remote-control functionality,
+          the App may process certain technical
+          information, including:
+        </p>
+
+        <ul>
+          <li>
+            <strong>Local network information:</strong>
+            Information necessary to identify and
+            communicate with devices on your Wi-Fi network.
+          </li>
+          <li>
+            <strong>Television information:</strong>
+            Device names, IP addresses, model information,
+            and supported connection protocols.
+          </li>
+          <li>
+            <strong>Pairing information:</strong>
+            Authentication or pairing information required
+            to establish connections with compatible TVs.
+          </li>
+          <li>
+            <strong>Advertising information:</strong>
+            Information that may be collected or processed
+            by advertising services integrated into the App.
+          </li>
+        </ul>
+
+        <p>
+          We do not require you to create an account
+          to use the App.
+        </p>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <span class="number">03</span>
+          <h2>Local Network Discovery</h2>
+        </div>
+
+        <p>
+          Smart TV Remote searches your local network
+          to identify compatible televisions.
+        </p>
+
+        <p>
+          This process may involve local IP address
+          discovery, network requests, and communication
+          with supported TV services.
+        </p>
+
+        <p>
+          Discovered device information is used to
+          display available televisions and allow
+          you to select a device for connection.
+        </p>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <span class="number">04</span>
+          <h2>TV Pairing and Remote Control</h2>
+        </div>
+
+        <p>
+          When connecting to a compatible television,
+          the App may exchange authentication or
+          pairing information with that device.
+        </p>
+
+        <p>
+          For example, Android / Google TV devices
+          may require you to enter a pairing code
+          displayed on the television.
+        </p>
+
+        <p>
+          Once connected, the App sends commands
+          such as navigation, volume adjustment,
+          media playback, and text input directly
+          to the selected television through the
+          supported connection method.
+        </p>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <span class="number">05</span>
+          <h2>Advertising</h2>
+        </div>
+
+        <p>
+          The App may display advertisements through
+          Google AdMob, a service provided by Google.
+        </p>
+
+        <p>
+          Google and its advertising partners may
+          collect or process information such as
+          advertising identifiers, device information,
+          IP addresses, advertising interactions,
+          and diagnostic information, depending
+          on device settings and applicable law.
+        </p>
+
+        <p>
+          This information may be used for advertising,
+          measurement, fraud prevention, and related
+          services.
+        </p>
+
+        <p>
+          You can learn more about Google's
+          data practices here:
+          <a
+            href="https://policies.google.com/privacy"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Google Privacy Policy
+          </a>.
+        </p>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <span class="number">06</span>
+          <h2>Permissions</h2>
+        </div>
+
+        <p>
+          Depending on your Android version and device,
+          the App may require permissions or system
+          capabilities to:
+        </p>
+
+        <ul>
+          <li>
+            Access network connectivity and communicate
+            with compatible devices.
+          </li>
+          <li>
+            Discover televisions connected to
+            your local network.
+          </li>
+          <li>
+            Maintain and restore connections to
+            supported televisions.
+          </li>
+          <li>
+            Display advertisements through
+            integrated advertising services.
+          </li>
+        </ul>
+
+        <p>
+          Permissions are used to support the
+          App's functionality and associated services.
+        </p>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <span class="number">07</span>
+          <h2>Data Storage and Retention</h2>
+        </div>
+
+        <p>
+          The App may store connection or pairing
+          information locally on your device
+          to support reconnection to previously
+          paired televisions.
+        </p>
+
+        <p>
+          The handling and retention of information
+          processed by third-party services, including
+          Google AdMob, are governed by those services'
+          applicable policies.
+        </p>
+
+        <p>
+          You may be able to remove locally stored
+          App information by clearing the App's data
+          or uninstalling it.
+        </p>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <span class="number">08</span>
+          <h2>Sharing of Information</h2>
+        </div>
+
+        <p>
+          Technical information necessary for
+          remote-control functionality is exchanged
+          with compatible televisions on your network.
+        </p>
+
+        <p>
+          Advertising-related information may be
+          processed by Google and its advertising
+          partners as described in their policies.
+        </p>
+
+        <p>
+          We do not sell a user account database
+          or require account registration to
+          access the App's remote-control features.
+        </p>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <span class="number">09</span>
+          <h2>Data Security</h2>
+        </div>
+
+        <p>
+          We aim to use appropriate measures
+          to protect information handled by the App.
+        </p>
+
+        <p>
+          Connections to televisions depend on
+          the protocols and security capabilities
+          supported by each device.
+        </p>
+
+        <p>
+          No method of electronic communication
+          or storage can be guaranteed to be
+          completely secure.
+        </p>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <span class="number">10</span>
+          <h2>Children's Privacy</h2>
+        </div>
+
+        <p>
+          The App is intended as a general-purpose
+          utility for controlling compatible
+          televisions and is not specifically
+          directed toward children.
+        </p>
+
+        <p>
+          We do not knowingly request personal
+          information directly from children
+          through account registration.
+        </p>
+
+        <p>
+          If you have concerns about information
+          relating to a child, please contact us.
+        </p>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <span class="number">11</span>
+          <h2>Your Choices</h2>
+        </div>
+
+        <p>
+          You can control certain aspects of how
+          the App and your device handle information.
+        </p>
+
+        <ul>
+          <li>
+            Choose whether to connect to a
+            discovered television.
+          </li>
+          <li>
+            Disconnect from a television
+            using the App.
+          </li>
+          <li>
+            Manage applicable Android permissions
+            through your device settings.
+          </li>
+          <li>
+            Manage advertising preferences
+            through available Android and
+            Google settings.
+          </li>
+          <li>
+            Clear the App's local data or
+            uninstall the App.
+          </li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <span class="number">12</span>
+          <h2>Changes to This Policy</h2>
+        </div>
+
+        <p>
+          We may update this Privacy Policy
+          from time to time to reflect changes
+          in the App, its features, third-party
+          services, or applicable requirements.
+        </p>
+
+        <p>
+          Any updates will be published on this
+          page with a revised last-updated date.
+        </p>
+      </section>
+
+      <div class="contact-card">
+        <div class="contact-icon" aria-hidden="true">✉</div>
+
+        <h2>Questions about privacy?</h2>
+
+        <p>
+          If you have questions, concerns,
+          or requests relating to this Privacy
+          Policy or Smart TV Remote, contact
+          H2Open Games directly.
+        </p>
+
+        <a
+          class="email-button"
+          href="mailto:h2opengames@gmail.com"
+        >
+          h2opengames@gmail.com
+        </a>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <span>© 2026 H2Open Games. All rights reserved.</span>
+      <span>Smart TV Remote · Privacy Policy</span>
+    </div>
+  </footer>
+
+</body>
+</html>
