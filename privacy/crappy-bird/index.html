@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#7ccceb">
+  <meta name="description" content="Privacy Policy for Crappy Bird by H2Open.">
+  <title>Privacy Policy | Crappy Bird</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --sky: #7ccceb;
+      --ink: #293f4d;
+      --paper: #fff9e8;
+      --blue: #3586a3;
+      --yellow: #ffe16b;
+      --green: #78c58c;
+      --muted: #58717c;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: linear-gradient(180deg, #78c9ed 0%, #b8e9f2 100%);
+      background-attachment: fixed;
+      font-family: 'Nunito', sans-serif;
+      color: var(--ink);
+      font-size: 16px;
+      line-height: 1.75;
+      min-height: 100vh;
+    }
+
+    .cloud {
+      position: fixed;
+      width: 145px;
+      height: 48px;
+      border-radius: 50px;
+      background: #ffffff9c;
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    .cloud::before, .cloud::after {
+      content: "";
+      position: absolute;
+      background: inherit;
+      border-radius: 50%;
+    }
+
+    .cloud::before {
+      width: 75px; height: 75px;
+      left: 22px; bottom: 10px;
+    }
+
+    .cloud::after {
+      width: 60px; height: 60px;
+      right: 17px; bottom: 5px;
+    }
+
+    .cloud.one { top: 12%; left: 3%; }
+    .cloud.two { top: 42%; right: 3%; transform: scale(.75); }
+    .cloud.three { bottom: 10%; left: 5%; transform: scale(.6); }
+
+    .container {
+      position: relative;
+      z-index: 1;
+      max-width: 850px;
+      margin: 0 auto;
+      padding: 50px 18px 70px;
+    }
+
+    .policy {
+      background: var(--paper);
+      border: 4px solid var(--ink);
+      border-radius: 24px;
+      padding: clamp(25px, 6vw, 60px);
+      box-shadow: 9px 10px 0 #293f4d55;
+    }
+
+    .bird {
+      width: 95px;
+      height: 95px;
+      margin: 0 auto 20px;
+      display: grid;
+      place-items: center;
+      background: var(--yellow);
+      border: 4px solid var(--ink);
+      border-radius: 50%;
+      box-shadow: 5px 6px 0 #293f4d33;
+      font-size: 48px;
+      line-height: 1;
+    }
+
+    .brand {
+      text-align: center;
+      font-family: 'Fredoka', sans-serif;
+      color: var(--blue);
+      font-weight: 600;
+      font-size: 13px;
+      letter-spacing: 3px;
+      margin-bottom: 10px;
+    }
+
+    h1, h2, .subtitle {
+      font-family: 'Fredoka', sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: clamp(35px, 7vw, 55px);
+      line-height: 1.15;
+      color: var(--ink);
+      margin: 0;
+      letter-spacing: 1px;
+    }
+
+    .subtitle {
+      text-align: center;
+      font-size: 21px;
+      color: var(--blue);
+      margin: 10px 0;
+      letter-spacing: 2px;
+    }
+
+    .updated {
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .divider {
+      height: 5px;
+      width: 100%;
+      background: repeating-linear-gradient(
+        90deg,
+        var(--yellow) 0 25px,
+        var(--green) 25px 50px,
+        #7ccceb 50px 75px
+      );
+      border-radius: 10px;
+      margin: 32px 0;
+    }
+
+    .intro {
+      background: #e8f8fc;
+      border: 2px solid #b7dce8;
+      border-radius: 16px;
+      padding: 22px;
+      text-align: center;
+      font-weight: 700;
+      font-size: 18px;
+    }
+
+    section {
+      padding: 22px 0;
+      border-bottom: 2px dashed #d7e4e4;
+    }
+
+    section:last-of-type { border-bottom: none; }
+
+    h2 {
+      color: var(--blue);
+      font-size: 21px;
+      line-height: 1.4;
+      margin: 0 0 15px;
+    }
+
+    p { margin: 0 0 14px; }
+
+    ul {
+      margin: 10px 0 18px;
+      padding-left: 24px;
+    }
+
+    li { margin-bottom: 10px; }
+    li::marker { color: var(--blue); }
+
+    a {
+      color: #176f99;
+      font-weight: 700;
+      overflow-wrap: anywhere;
+    }
+
+    a:hover { color: #174e69; }
+
+    .note {
+      background: #fff0bc;
+      border: 2px solid #e4c56b;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 15px 0;
+      overflow-wrap: anywhere;
+    }
+
+    footer {
+      text-align: center;
+      padding-top: 25px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    footer strong {
+      font-family: 'Fredoka', sans-serif;
+      font-size: 21px;
+      color: var(--blue);
+    }
+
+    @media (max-width: 600px) {
+      .container { padding: 18px 12px 40px; }
+      .policy {
+        border-width: 3px;
+        border-radius: 18px;
+        padding: 32px 22px;
+        box-shadow: 5px 6px 0 #293f4d55;
+      }
+      h2 { font-size: 19px; }
+      .cloud { opacity: .35; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+  </style>
+</head>
+<body>
+  <div class="cloud one" aria-hidden="true"></div>
+  <div class="cloud two" aria-hidden="true"></div>
+  <div class="cloud three" aria-hidden="true"></div>
+
+  <main class="container">
+    <article class="policy">
+      <div class="bird" aria-hidden="true">&#128038;</div>
+      <div class="brand">H2OPEN GAMES</div>
+      <h1>CRAPPY BIRD</h1>
+      <div class="subtitle">PRIVACY POLICY</div>
+      <p class="updated">Last updated: 28 October 2026</p>
+
+      <div class="divider"></div>
+
+      <div class="intro">
+        Flap safely. Fly freely.<br>
+        Your privacy matters, even when your flying skills don't.
+      </div>
+
+      <section>
+        <h2>1. Welcome to Crappy Bird</h2>
+        <p>
+          Crappy Bird ("the Game") is developed and published
+          by H2Open ("we", "us", or "our").
+          This Privacy Policy explains how information may be
+          collected, used, stored and shared when you play the Game.
+        </p>
+      </section>
+
+      <section>
+        <h2>2. Information We Collect</h2>
+        <p>
+          Depending on the features and services enabled in
+          the Game, information may include:
+        </p>
+        <ul>
+          <li>Gameplay progress, high scores, achievements
+          and game preferences.</li>
+          <li>Device information, operating system, app version
+          and diagnostic information.</li>
+          <li>Advertising identifiers and advertising-related
+          information processed by advertising providers,
+          where applicable.</li>
+          <li>Information you voluntarily provide when
+          contacting us for support.</li>
+        </ul>
+        <p>
+          Gameplay information may be stored locally on
+          your device. Third-party services may independently
+          process information under their own privacy policies.
+        </p>
+      </section>
+
+      <section>
+        <h2>3. How We Use Information</h2>
+        <p>Information may be used to:</p>
+        <ul>
+          <li>Operate and maintain the Game.</li>
+          <li>Save your scores and gameplay preferences.</li>
+          <li>Identify bugs and improve performance.</li>
+          <li>Provide support and respond to questions.</li>
+          <li>Display and measure advertisements,
+          where enabled.</li>
+          <li>Meet applicable legal obligations.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>4. Advertising and Third-Party Services</h2>
+        <p>
+          The Game may use third-party advertising services,
+          including Google AdMob, if advertising is enabled.
+          Advertising providers may process device identifiers,
+          approximate location derived from network information,
+          advertising interactions and technical information.
+        </p>
+        <p>
+          Such processing may be used to deliver, measure
+          and protect advertisements, subject to applicable
+          consent and privacy requirements.
+        </p>
+        <p>
+          You can read more in the
+          <a href="https://policies.google.com/privacy"
+             target="_blank" rel="noopener noreferrer">
+             Google Privacy Policy</a>.
+        </p>
+        <p>
+          Advertising preferences may be managed through
+          device settings or consent options presented
+          in the Game, where available.
+        </p>
+      </section>
+
+      <section>
+        <h2>5. Sharing of Information</h2>
+        <p>
+          We do not directly sell personal information.
+          Information may be processed by third-party
+          providers supporting the Game, such as advertising
+          or diagnostic services where integrated.
+        </p>
+        <p>
+          We may also disclose information when legally
+          required or necessary to protect the security
+          and integrity of the Game.
+        </p>
+      </section>
+
+      <section>
+        <h2>6. Data Storage and Security</h2>
+        <p>
+          We take reasonable steps to protect information
+          under our control. However, no electronic storage
+          or transmission method is completely secure.
+        </p>
+        <p>
+          Local gameplay data may be removed when you
+          clear the Game's data or uninstall the Game.
+          Third-party providers may retain information
+          under their own retention policies.
+        </p>
+      </section>
+
+      <section>
+        <h2>7. Children's Privacy</h2>
+        <p>
+          We take children's privacy seriously.
+          The Game is not intended to collect personal
+          information directly from children without
+          appropriate safeguards.
+        </p>
+        <p>
+          Where required, age-appropriate advertising,
+          consent and data protection measures will apply.
+          If you believe a child has provided personal
+          information to us, please contact us.
+        </p>
+      </section>
+
+      <section>
+        <h2>8. Your Privacy Choices and Rights</h2>
+        <p>
+          Depending on applicable law, you may have rights
+          to request access to, correction of or deletion
+          of personal information we control, or to object
+          to certain processing activities.
+        </p>
+        <p>
+          Contact us using the details below to submit
+          a request. Information controlled by third-party
+          providers may need to be addressed directly
+          with those providers.
+        </p>
+      </section>
+
+      <section>
+        <h2>9. International Data Processing</h2>
+        <p>
+          Third-party service providers may process
+          information outside your country of residence.
+          Where required, appropriate protections will
+          apply under relevant privacy laws.
+        </p>
+      </section>
+
+      <section>
+        <h2>10. Updates to This Policy</h2>
+        <p>
+          We may update this Privacy Policy when the
+          Game, our services or legal requirements change.
+          Any revised policy will be published here with
+          an updated effective date.
+        </p>
+      </section>
+
+      <section>
+        <h2>11. Contact H2Open</h2>
+        <p>
+          Questions about your privacy? We're happy to help.
+          You can contact the developer using the details below.
+        </p>
+        <div class="note">
+          <strong>H2Open</strong><br>
+          Email: h2opengames@gmail.com<br>
+          South Africa
+        </div>
+      </section>
+
+      <div class="divider"></div>
+
+      <footer>
+        <strong>CRAPPY BIRD</strong>
+        <p>© 2026 H2Open. All rights reserved.</p>
+        <p>Keep flapping. Keep smiling. Keep your privacy.</p>
+      </footer>
+    </article>
+  </main>
+</body>
+</html>
