@@ -1,0 +1,730 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#14291b">
+<meta name="description" content="Bird of Spray privacy policy by H2Open Games">
+<title>Bird of Spray | Privacy Policy</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --forest: #14291b;
+  --panel: #1c3725;
+  --gold: #ffca29;
+  --cream: #f5efdc;
+  --border: #9c7936;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: 'Fredoka', sans-serif;
+  color: var(--cream);
+  background: linear-gradient(#173c28, #0b1b11);
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  min-height: 390px;
+  background: linear-gradient(
+    #65b4dc 0%,
+    #b3dce4 65%,
+    #638c62 100%
+  );
+  text-align: center;
+  padding: 35px 15px 70px;
+  border-bottom: 7px solid #253d20;
+}
+
+.sun {
+  position: absolute;
+  top: 28px;
+  right: 12%;
+  width: 105px;
+  height: 105px;
+  border-radius: 50%;
+  background: #fff4b2;
+  box-shadow: 0 0 70px 25px #fff2b27a;
+}
+
+.cloud {
+  position: absolute;
+  width: 150px;
+  height: 42px;
+  border-radius: 50px;
+  background: #fff9;
+}
+
+.cloud::before,
+.cloud::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background: inherit;
+}
+
+.cloud::before {
+  width: 75px;
+  height: 70px;
+  left: 22px;
+  bottom: 9px;
+}
+
+.cloud::after {
+  width: 65px;
+  height: 57px;
+  right: 18px;
+  bottom: 6px;
+}
+
+.c1 {
+  top: 75px;
+  left: 8%;
+  animation: drift 11s ease-in-out infinite alternate;
+}
+
+.c2 {
+  top: 135px;
+  right: 5%;
+  transform: scale(.75);
+  animation: drift 14s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes drift {
+  to { translate: 28px 0; }
+}
+
+.forest {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 145px;
+  pointer-events: none;
+}
+
+.forest svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.brand {
+  font-size: 12px;
+  letter-spacing: 4px;
+  font-weight: 700;
+  color: #fff8dc;
+  text-shadow: 0 2px 4px #173d39;
+}
+
+.bird {
+  display: block;
+  width: 145px;
+  height: 145px;
+  margin: 5px auto -5px;
+  filter: drop-shadow(4px 8px 2px #14291b55);
+  animation: bob 3s ease-in-out infinite;
+}
+
+@keyframes bob {
+  50% {
+    transform: translateY(-7px) rotate(-2deg);
+  }
+}
+
+h1 {
+  font: clamp(43px, 9vw, 76px)/.95
+    'Luckiest Guy', sans-serif;
+  color: #fff9e7;
+  margin: 5px 0 10px;
+  letter-spacing: 2px;
+  -webkit-text-stroke: 1.5px #2c2b1d;
+  text-shadow:
+    3px 5px 0 #3d3421,
+    5px 7px 0 #0005;
+}
+
+h1 span { color: var(--gold); }
+
+.ribbon {
+  display: inline-block;
+  background: linear-gradient(#ffe16a, #ffbb21);
+  border: 3px solid #4a381e;
+  border-radius: 13px;
+  box-shadow:
+    0 5px 0 #6e4c19,
+    0 9px 14px #0004;
+  padding: 13px 25px 8px;
+  font: 25px 'Luckiest Guy', sans-serif;
+  color: #2c2a1a;
+  letter-spacing: 2px;
+}
+
+main {
+  max-width: 850px;
+  margin: -22px auto 0;
+  padding: 0 16px 65px;
+  position: relative;
+  z-index: 3;
+}
+
+.policy {
+  background: linear-gradient(145deg, #24452c, #152a1c);
+  border: 3px solid #a4823d;
+  border-radius: 22px;
+  box-shadow:
+    0 12px 0 #09180d,
+    0 20px 35px #0007;
+  padding: clamp(22px, 5vw, 45px);
+}
+
+.intro {
+  text-align: center;
+  color: #fff1c5;
+  font-size: 18px;
+  margin: 0 0 20px;
+}
+
+.updated {
+  text-align: center;
+  color: #bac8ad;
+  font-size: 12px;
+}
+
+.section {
+  background: #10271a;
+  border: 1px solid #5e6439;
+  border-radius: 13px;
+  padding: 21px 22px;
+  margin: 18px 0;
+  box-shadow: inset 0 1px 0 #ffffff12;
+}
+
+h2 {
+  color: var(--gold);
+  font: clamp(19px, 3vw, 24px)/1.25
+    'Luckiest Guy', sans-serif;
+  letter-spacing: .7px;
+  margin: 0 0 13px;
+}
+
+p {
+  font-size: 15px;
+  line-height: 1.8;
+  margin: 0 0 12px;
+}
+
+p:last-child { margin-bottom: 0; }
+
+ul {
+  padding-left: 22px;
+  margin: 10px 0;
+}
+
+li {
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 8px;
+}
+
+li::marker { color: var(--gold); }
+
+a {
+  color: #ffdc74;
+  overflow-wrap: anywhere;
+}
+
+a:hover { color: #fff4c6; }
+
+.contact {
+  background: #29442c;
+  border-left: 4px solid var(--gold);
+  padding: 16px;
+  border-radius: 8px;
+  overflow-wrap: anywhere;
+}
+
+footer {
+  text-align: center;
+  padding: 35px 0 0;
+  color: #bdc9ad;
+  font-size: 13px;
+}
+
+footer strong {
+  color: var(--gold);
+  font: 22px 'Luckiest Guy', sans-serif;
+}
+
+@media(max-width:600px) {
+  .hero {
+    min-height: 360px;
+    padding-top: 25px;
+  }
+
+  .bird {
+    width: 125px;
+    height: 125px;
+  }
+
+  .section { padding: 18px 16px; }
+  main { padding: 0 12px 50px; }
+}
+
+@media(prefers-reduced-motion:reduce) {
+  .bird, .cloud { animation: none; }
+  html { scroll-behavior: auto; }
+}
+</style>
+</head>
+
+<body>
+
+<header class="hero">
+  <div class="sun"></div>
+  <div class="cloud c1"></div>
+  <div class="cloud c2"></div>
+
+  <div class="forest" aria-hidden="true">
+    <svg viewBox="0 0 1200 145"
+         preserveAspectRatio="none">
+      <path fill="#416d46"
+        d="M0 110 L50 30 90 110 140 15
+        205 110 260 35 310 110 375 20
+        440 110 510 40 570 110 640 10
+        700 110 765 25 830 110 900 20
+        965 110 1030 30 1090 110 1150 10
+        1200 110 V145 H0Z"/>
+      <path fill="#244c31"
+        d="M0 145 V105 L60 35 115 105
+        185 10 255 105 330 28 390 105
+        475 12 550 105 620 28 685 105
+        760 10 835 105 910 25 980 105
+        1050 5 1130 105 1200 45 V145Z"/>
+      <path fill="#173823"
+        d="M0 145 V125 L85 55 150 125
+        240 38 325 125 410 55 490 125
+        580 40 660 125 745 48 825 125
+        915 38 995 125 1090 48 1200 125
+        V145Z"/>
+    </svg>
+  </div>
+
+  <div class="hero-content">
+    <div class="brand">H2OPEN GAMES</div>
+
+    <svg class="bird"
+         viewBox="0 0 200 200"
+         role="img"
+         aria-label="Mischievous yellow cartoon bird">
+
+      <defs>
+        <radialGradient id="feathers"
+          cx=".35" cy=".25" r=".85">
+          <stop stop-color="#fff36b"/>
+          <stop offset=".65" stop-color="#ffd12c"/>
+          <stop offset="1" stop-color="#e69a16"/>
+        </radialGradient>
+      </defs>
+
+      <path d="M85 42 L77 19 103 36
+        113 12 123 43"
+        fill="#ffc32b"
+        stroke="#4a351d"
+        stroke-width="5"
+        stroke-linejoin="round"/>
+
+      <ellipse cx="100" cy="108"
+        rx="76" ry="72"
+        fill="url(#feathers)"
+        stroke="#4a351d"
+        stroke-width="6"/>
+
+      <path d="M37 112 Q9 89 18 127
+        Q29 146 50 139"
+        fill="#e4a12a"
+        stroke="#4a351d"
+        stroke-width="5"/>
+
+      <path d="M164 112 Q190 90
+        182 127 Q171 146 151 139"
+        fill="#e4a12a"
+        stroke="#4a351d"
+        stroke-width="5"/>
+
+      <ellipse cx="73" cy="93"
+        rx="23" ry="20"
+        fill="white"
+        stroke="#4a351d"
+        stroke-width="3"/>
+
+      <ellipse cx="126" cy="93"
+        rx="23" ry="20"
+        fill="white"
+        stroke="#4a351d"
+        stroke-width="3"/>
+
+      <circle cx="83" cy="96" r="8"
+        fill="#241e19"/>
+
+      <circle cx="116" cy="96" r="8"
+        fill="#241e19"/>
+
+      <path d="M49 72 L94 85
+        M151 72 L107 85"
+        stroke="#4a351d"
+        stroke-width="11"
+        stroke-linecap="round"/>
+
+      <path d="M85 112 Q100 101
+        115 112 L102 134
+        Q99 137 96 134Z"
+        fill="#f28c20"
+        stroke="#643719"
+        stroke-width="4"/>
+
+      <path d="M73 143 Q105 165 134 139"
+        fill="none"
+        stroke="#54331b"
+        stroke-width="5"
+        stroke-linecap="round"/>
+
+      <path d="M110 152 Q124 149 132 141"
+        fill="none"
+        stroke="#fff4a4"
+        stroke-width="3"
+        stroke-linecap="round"/>
+    </svg>
+
+    <h1>BIRD OF <span>SPRAY</span></h1>
+    <div class="ribbon">PRIVACY POLICY</div>
+  </div>
+</header>
+
+<main>
+<article class="policy">
+
+<p class="intro">
+  Even a mischievous bird respects your privacy.
+</p>
+
+<p class="updated">
+  Last updated: 9 November 2026
+</p>
+
+<section class="section">
+  <h2>01. Welcome to Bird of Spray</h2>
+  <p>
+    Bird of Spray ("the Game") is developed and
+    published by H2Open ("we", "us", or "our").
+    This Privacy Policy explains how information
+    may be collected, used, stored and shared
+    when you play the Game.
+  </p>
+</section>
+
+<section class="section">
+  <h2>02. Information We Collect</h2>
+
+  <p>
+    Depending on the features and services
+    enabled in the Game, information may include:
+  </p>
+
+  <ul>
+    <li>
+      Gameplay progress, high scores and
+      game preferences.
+    </li>
+    <li>
+      Device information, operating system,
+      app version and diagnostic information.
+    </li>
+    <li>
+      Advertising identifiers, advertising
+      interactions and related information
+      processed by advertising providers.
+    </li>
+    <li>
+      Information you voluntarily provide
+      when contacting us for support.
+    </li>
+  </ul>
+
+  <p>
+    Gameplay information is stored locally
+    on your device using the Game's local
+    storage functionality.
+  </p>
+
+  <p>
+    Third-party advertising services may
+    independently collect and process
+    information as described below.
+  </p>
+</section>
+
+<section class="section">
+  <h2>03. How Information Is Used</h2>
+
+  <ul>
+    <li>To operate and maintain the Game.</li>
+    <li>To save scores and gameplay preferences.</li>
+    <li>To diagnose technical issues and improve performance.</li>
+    <li>To respond to support requests.</li>
+    <li>To deliver and measure advertisements.</li>
+    <li>To prevent fraud and abuse.</li>
+    <li>To comply with applicable legal obligations.</li>
+  </ul>
+</section>
+
+<section class="section">
+  <h2>04. Advertising and Google AdMob</h2>
+
+  <p>
+    Bird of Spray integrates Google AdMob,
+    a third-party advertising service provided
+    by Google.
+  </p>
+
+  <p>
+    The Game may display interstitial
+    advertisements and optional rewarded
+    advertisements during gameplay.
+  </p>
+
+  <p>
+    Google and its advertising partners may
+    process information such as device
+    identifiers, IP addresses, approximate
+    location derived from network information,
+    advertising interactions and technical
+    device information.
+  </p>
+
+  <p>
+    This information may be used for
+    advertising delivery, measurement,
+    fraud prevention and, where permitted,
+    personalised advertising.
+  </p>
+
+  <p>
+    For more information, please review
+    Google's Privacy Policy:
+    <a href="https://policies.google.com/privacy"
+       target="_blank"
+       rel="noopener noreferrer">
+       Google Privacy Policy
+    </a>.
+  </p>
+
+  <p>
+    Where applicable, advertising consent
+    options may be provided in accordance
+    with relevant privacy laws.
+  </p>
+</section>
+
+<section class="section">
+  <h2>05. Sharing of Information</h2>
+
+  <p>
+    H2Open does not directly sell personal
+    information collected through the Game.
+  </p>
+
+  <p>
+    Information may be processed by
+    third-party providers, including
+    Google AdMob, for advertising,
+    measurement, security and related
+    services.
+  </p>
+
+  <p>
+    Information may also be disclosed
+    when required by applicable law
+    or lawful legal process.
+  </p>
+</section>
+
+<section class="section">
+  <h2>06. Data Storage and Security</h2>
+
+  <p>
+    Game progress and preferences may
+    be stored locally on your device.
+  </p>
+
+  <p>
+    Local gameplay information can generally
+    be removed by clearing the Game's app
+    data or uninstalling the Game, subject
+    to any device backup and restoration
+    settings.
+  </p>
+
+  <p>
+    We take reasonable steps to protect
+    information under our control.
+    However, no electronic storage or
+    transmission system is completely secure.
+  </p>
+
+  <p>
+    Third-party providers may retain
+    information in accordance with their
+    own privacy policies and applicable law.
+  </p>
+</section>
+
+<section class="section">
+  <h2>07. Children's Privacy</h2>
+
+  <p>
+    We recognise the importance of
+    protecting children's privacy.
+  </p>
+
+  <p>
+    Bird of Spray does not require
+    players to create an account or
+    directly submit personal information
+    to participate in gameplay.
+  </p>
+
+  <p>
+    Advertising services may process
+    certain device and advertising
+    information, subject to applicable
+    privacy laws and age-related
+    requirements.
+  </p>
+
+  <p>
+    Where required, we will apply
+    appropriate safeguards relating
+    to children's data, consent and
+    advertising.
+  </p>
+
+  <p>
+    Parents or guardians with privacy
+    concerns may contact us using
+    the information below.
+  </p>
+</section>
+
+<section class="section">
+  <h2>08. Your Privacy Rights</h2>
+
+  <p>
+    Depending on your location and
+    applicable law, you may have rights
+    to request access to, correction
+    of or deletion of personal
+    information under our control.
+  </p>
+
+  <p>
+    You may also have rights to object
+    to certain processing activities
+    or withdraw consent where applicable.
+  </p>
+
+  <p>
+    To submit a privacy request,
+    please contact H2Open using
+    the email address below.
+  </p>
+
+  <p>
+    For information processed
+    independently by third-party
+    providers, you may need to
+    contact those providers directly.
+  </p>
+</section>
+
+<section class="section">
+  <h2>09. International Data Processing</h2>
+
+  <p>
+    Third-party service providers,
+    including Google, may process
+    information in countries outside
+    your country of residence.
+  </p>
+
+  <p>
+    Where required, appropriate
+    safeguards will apply in
+    accordance with applicable
+    data protection laws.
+  </p>
+</section>
+
+<section class="section">
+  <h2>10. Changes to This Policy</h2>
+
+  <p>
+    We may update this Privacy Policy
+    to reflect changes to the Game,
+    its features, third-party services
+    or applicable legal requirements.
+  </p>
+
+  <p>
+    Any revisions will be published
+    on this page with an updated
+    effective date.
+  </p>
+</section>
+
+<section class="section">
+  <h2>11. Contact H2Open</h2>
+
+  <p>
+    If you have questions, concerns
+    or requests regarding this
+    Privacy Policy, please contact:
+  </p>
+
+  <div class="contact">
+    <strong>H2Open Games</strong>
+    <p>
+      Email:
+      <a href="mailto:h2opengames@gmail.com">
+        h2opengames@gmail.com
+      </a>
+    </p>
+    <p>South Africa</p>
+  </div>
+</section>
+
+<footer>
+  <strong>BIRD OF SPRAY</strong>
+  <p>© 2026 H2Open. All rights reserved.</p>
+  <p>Keep flying. Keep your privacy.</p>
+</footer>
+
+</article>
+</main>
+
+</body>
+</html>
